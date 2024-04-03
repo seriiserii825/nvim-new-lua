@@ -33,6 +33,7 @@ return packer.startup(function(use)
   use("wbthomason/packer.nvim")
   use("nathanaelkane/vim-indent-guides")
   use("frazrepo/vim-rainbow")
+  use("tomtom/tcomment_vim")
 
   use("mattn/emmet-vim")
   use { "jdhao/better-escape.vim", event = "InsertEnter" }
@@ -40,6 +41,7 @@ return packer.startup(function(use)
   use {"folke/flash.nvim"}
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
+  use("jiangmiao/auto-pairs")
 
   -- Theme
   -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
@@ -51,9 +53,6 @@ return packer.startup(function(use)
 
   -- essential plugins
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
-
-  -- commenting with gc
-  use("numToStr/Comment.nvim")
 
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
@@ -112,12 +111,12 @@ return packer.startup(function(use)
   -- use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
   -- treesitter configuration
-  -- use({
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	run = function()
-  -- 		require("nvim-treesitter.install").update({ with_sync = true })
-  -- 	end,
-  -- })
+  use({
+  	"nvim-treesitter/nvim-treesitter",
+  	run = function()
+  		require("nvim-treesitter.install").update({ with_sync = true })
+  	end,
+  })
 
   -- auto closing
   -- use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...

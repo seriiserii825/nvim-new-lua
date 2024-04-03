@@ -4,7 +4,6 @@ require("serii.core.keymaps")
 require("serii.plugins-setup")
 
 -- plugins
-require("serii.plugins.comment")
 require("serii.plugins.nvim-tree")
 require("serii.plugins.lualine")
 require("serii.plugins.telescope")
@@ -21,3 +20,4 @@ require("serii.plugins.emmet")
 require("serii.plugins.ultisnipets")
 require("serii.plugins.indent-guides")
 require("serii.plugins.rainbow")
+require("serii.plugins.treesitter")
