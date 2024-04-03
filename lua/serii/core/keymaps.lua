@@ -16,14 +16,14 @@ vim.g.mapleader = ' '
 --   command_mode = "c",
 
 -- Sneak --
-keymap("n", "b", "<Plug>Sneak_S", opts)
+-- keymap("n", "b", "<Plug>Sneak_S", opts)
 
 -- Search --
 keymap("n", "<leader>nh", ":nohl<CR>", opts)
 keymap("n", "<C-b>", ":ToggleTerm<CR>", opts)
 
 -- nvim-tree
-keymap("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", opts) -- toggle file explorer
+keymap("n", "<space>e", ":NvimTreeFindFileToggle<CR>", opts) -- toggle file explorer
 
 -- window management
 keymap("n", "<leader>sv", "<C-w>v",opts) -- split window vertically

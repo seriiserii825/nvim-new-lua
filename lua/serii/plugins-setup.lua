@@ -31,6 +31,7 @@ return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
 
+  use("mattn/emmet-vim")
   use { "jdhao/better-escape.vim", event = "InsertEnter" }
   -- use "justinmk/vim-sneak"
   use {"folke/flash.nvim"}
