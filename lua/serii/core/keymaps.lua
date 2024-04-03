@@ -20,6 +20,7 @@ keymap("n", "b", "<Plug>Sneak_S", opts)
 
 -- Search --
 keymap("n", "<leader>nh", ":nohl<CR>", opts)
+keymap("n", "<C-b>", ":ToggleTerm<CR>", opts)
 
 -- nvim-tree
 keymap("n", "<leader>e", ":NvimTreeFindFileToggle<CR>", opts) -- toggle file explorer
