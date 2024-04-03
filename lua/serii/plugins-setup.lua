@@ -32,7 +32,8 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
   
   use { "jdhao/better-escape.vim", event = "InsertEnter" }
-  use "justinmk/vim-sneak"
+  -- use "justinmk/vim-sneak"
+  use {"folke/flash.nvim"}
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 

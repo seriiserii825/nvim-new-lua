@@ -116,6 +116,11 @@ _G.packer_plugins = {
     path = "/home/serii/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["flash.nvim"] = {
+    loaded = true,
+    path = "/home/serii/.local/share/nvim/site/pack/packer/start/flash.nvim",
+    url = "https://github.com/folke/flash.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/serii/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -190,11 +195,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/serii/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-sneak"] = {
-    loaded = true,
-    path = "/home/serii/.local/share/nvim/site/pack/packer/start/vim-sneak",
-    url = "https://github.com/justinmk/vim-sneak"
   },
   ["vim-surround"] = {
     loaded = true,
