@@ -20,6 +20,7 @@ autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
 augroup end
 ]])
 
+
 -- import packer safely
 local status, packer = pcall(require, "packer")
 if not status then
@@ -67,7 +68,7 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
 
   --save
-  use({ "Pocco81/auto-save.nvim" })
+  -- use({ "Pocco81/auto-save.nvim" })
 
   --auosave
   use { "akinsho/bufferline.nvim",  requires = "kyazdani42/nvim-web-devicons" }

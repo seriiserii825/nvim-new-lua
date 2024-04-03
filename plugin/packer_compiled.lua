@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/serii/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["auto-save.nvim"] = {
-    loaded = true,
-    path = "/home/serii/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
-    url = "https://github.com/Pocco81/auto-save.nvim"
-  },
   ["better-escape.vim"] = {
     loaded = false,
     needs_bufread = false,

@@ -1,3 +1,23 @@
+-- Define autocmd function to set up the autocmd
+local function setup_autocmd()
+    -- Define the autocmd pattern
+    local autocmd = {
+        "autocmd",
+        "FocusLost",
+        "*",
+        "silent!",
+        "wall"
+    }
+    
+    -- Join the elements of the autocmd table with a space separator
+    local cmd = table.concat(autocmd, " ")
+    
+    -- Execute the autocmd command
+    vim.cmd(cmd)
+end
+
+-- Call the setup_autocmd function to set up the autocmd
+setup_autocmd()
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
