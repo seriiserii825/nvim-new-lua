@@ -41,8 +41,7 @@ return packer.startup(function(use)
   use {"folke/flash.nvim"}
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-  use("jiangmiao/auto-pairs")
-  use("mg979/vim-visual-multi")
+  use("jiangmiao/auto-pairs") use("mg979/vim-visual-multi")
 
   -- Theme
   -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
