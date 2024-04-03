@@ -216,10 +216,20 @@ _G.packer_plugins = {
     path = "/home/serii/.local/share/nvim/site/pack/packer/start/ultisnips",
     url = "https://github.com/SirVer/ultisnips"
   },
+  ["vim-indent-guides"] = {
+    loaded = true,
+    path = "/home/serii/.local/share/nvim/site/pack/packer/start/vim-indent-guides",
+    url = "https://github.com/nathanaelkane/vim-indent-guides"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/home/serii/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
+  },
+  ["vim-rainbow"] = {
+    loaded = true,
+    path = "/home/serii/.local/share/nvim/site/pack/packer/start/vim-rainbow",
+    url = "https://github.com/frazrepo/vim-rainbow"
   },
   ["vim-snippets"] = {
     loaded = true,

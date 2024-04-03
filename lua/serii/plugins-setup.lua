@@ -31,6 +31,8 @@ end
 return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
+  use("nathanaelkane/vim-indent-guides")
+  use("frazrepo/vim-rainbow")
 
   use("mattn/emmet-vim")
   use { "jdhao/better-escape.vim", event = "InsertEnter" }
