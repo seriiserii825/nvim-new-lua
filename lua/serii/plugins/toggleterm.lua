@@ -5,7 +5,7 @@ end
 
 toggleterm.setup{
 	size = 20,
-  open_mapping = [[<leader>l]],
+  open_mapping = [[<c-\>]],
   hide_numbers = true, -- hide the number column in toggleterm buffers
   shade_filetypes = {},
   shade_terminals = true,
