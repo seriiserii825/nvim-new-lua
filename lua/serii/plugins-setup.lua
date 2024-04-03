@@ -80,9 +80,10 @@ return packer.startup(function(use)
   use("hrsh7th/cmp-nvim-lsp") -- source for file system paths
 
   -- snippets
-  use("L3MON4D3/LuaSnip") -- snippet engine
-  use("saadparwaiz1/cmp_luasnip") -- for autocompletion
-  use("rafamadriz/friendly-snippets") -- useful snippets
+  -- use("L3MON4D3/LuaSnip") -- snippet engine
+  -- use("saadparwaiz1/cmp_luasnip") -- for autocompletion
+  -- use("rafamadriz/friendly-snippets") -- useful snippets
+  -- 
 
   -- managing & installing lsp servers, linters & formatters
   use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
