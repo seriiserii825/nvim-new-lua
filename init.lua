@@ -1,0 +1,15 @@
+require("serii.core.options")
+require("serii.core.colorscheme")
+require("serii.core.keymaps")
+require("serii.plugins-setup")
+
+-- plugins
+require("serii.plugins.comment")
+require("serii.plugins.nvim-tree")
+require("serii.plugins.lualine")
+require("serii.plugins.telescope")
+require("serii.plugins.toggleterm")
+require("serii.plugins.autosave")
+require("serii.plugins.bufferline")
+require("serii.plugins.nvim-cmp")
+require("serii.plugins.lsp.mason")
