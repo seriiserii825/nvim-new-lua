@@ -42,6 +42,7 @@ return packer.startup(function(use)
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
   use("jiangmiao/auto-pairs")
+  use("mg979/vim-visual-multi")
 
   -- Theme
   -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
@@ -112,17 +113,20 @@ return packer.startup(function(use)
 
   -- treesitter configuration
   use({
-  	"nvim-treesitter/nvim-treesitter",
-  	run = function()
-  		require("nvim-treesitter.install").update({ with_sync = true })
-  	end,
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
+    end,
   })
 
   -- auto closing
   -- use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   -- use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
-  -- git integration
+  -- git integration 
+  use('tpope/vim-fugitive' )
+  use('airblade/vim-gitgutter')
+  use('f-person/git-blame.nvim')
   -- use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
   if packer_bootstrap then
