@@ -20,7 +20,6 @@ vim.g.mapleader = ' '
 
 -- Search --
 keymap("n", "<leader>nh", ":nohl<CR>", opts)
-keymap("n", "<C-b>", ":ToggleTerm<CR>", opts)
 
 -- nvim-tree
 keymap("n", "<space>e", ":NvimTreeFindFileToggle<CR>", opts) -- toggle file explorer
