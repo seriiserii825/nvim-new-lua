@@ -1,10 +1,23 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.lua_ls.setup {}
-lspconfig.tsserver.setup {}
-lspconfig.volar.setup {}
-lspconfig.pyright.setup {}
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
+--   capabilities = capabilities
+-- }
+lspconfig.lua_ls.setup {
+  capabilities = capabilities
+}
+lspconfig.tsserver.setup {
+  capabilities = capabilities
+}
+lspconfig.volar.setup {
+  capabilities = capabilities
+}
+lspconfig.pyright.setup {
+  capabilities = capabilities
+}
 lspconfig.intelephense.setup {
+  capabilities = capabilities,
   filetypes = { "php" },
   settings = {
     intelephense = {
@@ -21,9 +34,14 @@ lspconfig.intelephense.setup {
     },
   }
 }
-lspconfig.emmet_ls.setup {}
-lspconfig.cssls.setup {}
+lspconfig.emmet_ls.setup {
+  capabilities = capabilities,
+}
+lspconfig.cssls.setup {
+  capabilities = capabilities,
+}
 lspconfig.rust_analyzer.setup {
+  capabilities = capabilities,
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
     ['rust-analyzer'] = {},
