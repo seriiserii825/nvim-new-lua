@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
-vim.cmd([[ 
+vim.cmd([[
 augroup packer_user_config
 autocmd!
 autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
@@ -34,18 +34,20 @@ return packer.startup(function(use)
   use("nathanaelkane/vim-indent-guides")
   use("frazrepo/vim-rainbow")
   use("tomtom/tcomment_vim")
+  use("folke/which-key.nvim")
 
   use("mattn/emmet-vim")
   use { "jdhao/better-escape.vim", event = "InsertEnter" }
   -- use "justinmk/vim-sneak"
-  use {"folke/flash.nvim"}
+  use { "folke/flash.nvim" }
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-  use("jiangmiao/auto-pairs") use("mg979/vim-visual-multi")
+  use("jiangmiao/auto-pairs")
+  use("mg979/vim-visual-multi")
 
   -- Theme
   -- use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-  use {"AlphaTechnolog/onedarker.nvim"}
+  use { "AlphaTechnolog/onedarker.nvim" }
 
   -- Window
   --  use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -65,39 +67,39 @@ return packer.startup(function(use)
 
   -- fuzzy finding w/ telescope
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })        -- fuzzy finder
   use "akinsho/toggleterm.nvim"
 
   --save
   -- use({ "Pocco81/auto-save.nvim" })
 
   --auosave
-  use { "akinsho/bufferline.nvim",  requires = "kyazdani42/nvim-web-devicons" }
+  use { "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" }
 
   -- autocompletion
-  use("hrsh7th/nvim-cmp") -- completion plugin
-  use("hrsh7th/cmp-buffer") -- source for text in buffer
-  use("hrsh7th/cmp-path") -- source for file system paths
+  use("hrsh7th/nvim-cmp")     -- completion plugin
+  use("hrsh7th/cmp-buffer")   -- source for text in buffer
+  use("hrsh7th/cmp-path")     -- source for file system paths
   use("hrsh7th/cmp-nvim-lua") -- source for file system paths
   use("hrsh7th/cmp-nvim-lsp") -- source for file system paths
-  use("hrsh7th/cmp-cmdline") -- source for file system paths
+  use("hrsh7th/cmp-cmdline")  -- source for file system paths
   use("quangnguyen30192/cmp-nvim-ultisnips")
 
   -- snippets
-  use ('SirVer/ultisnips')
-  use ('honza/vim-snippets')
+  use('SirVer/ultisnips')
+  use('honza/vim-snippets')
   -- use("L3MON4D3/LuaSnip") -- snippet engine
   -- use("saadparwaiz1/cmp_luasnip") -- for autocompletion
   -- use("rafamadriz/friendly-snippets") -- useful snippets
-  -- 
+  --
 
   -- managing & installing lsp servers, linters & formatters
-  use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+  use("williamboman/mason.nvim")           -- in charge of managing lsp servers, linters & formatters
   use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
-  use( 'rcarriga/nvim-notify')
-  use( 'folke/noice.nvim')
-  use( 'MunifTanjim/nui.nvim')
+  use('rcarriga/nvim-notify')
+  use('folke/noice.nvim')
+  use('MunifTanjim/nui.nvim')
 
   -- configuring lsp servers
   use("neovim/nvim-lspconfig") -- easily configure language servers
@@ -122,8 +124,8 @@ return packer.startup(function(use)
   -- use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   -- use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
-  -- git integration 
-  use('tpope/vim-fugitive' )
+  -- git integration
+  use('tpope/vim-fugitive')
   use('airblade/vim-gitgutter')
   use('f-person/git-blame.nvim')
   -- use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
@@ -132,4 +134,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-
